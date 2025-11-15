@@ -35,3 +35,15 @@ int main() {
         karakter++;
         }
     karakter=0;
+    i++;
+    }
+    fprintf(fp,"%s\n",arr[0]);
+    printf("%s\n",arr[0]);
+    fprintf(fp,"%s=\n",arr[1]);
+    printf("%s=\n",arr[1]);
+
+    i=2;
+    for ( i; i <= n-1; i++)
+    {   int j;
+        for (  j = 1; j < i; j++)
+        {
