@@ -23,3 +23,15 @@ int main() {
     int n=i;
     int karakter=0;
     i=1; 
+    while (i<=n)
+    {  while (arr[i][karakter]!='\0')
+        {
+            if (arr[i][karakter]>='A' && arr[i][karakter]<='Z')
+            {  arr[i][karakter]+=32;  }
+            else if (arr[i][karakter]!='\''&& 
+                !(arr[i][karakter]>='a' && arr[i][karakter]<='z')&& 
+                !(arr[i][karakter]>='A' && arr[i][karakter]<='Z'))
+            {  arr[i][karakter]='\0';  }
+        karakter++;
+        }
+    karakter=0;
