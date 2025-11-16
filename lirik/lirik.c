@@ -47,3 +47,15 @@ int main() {
     {   int j;
         for (  j = 1; j < i; j++)
         {
+            if (strcmp(arr[i],arr[j])==0)
+            {break;}
+        }
+        if (j==i)
+        {
+        fprintf(fp,"%s=\n",arr[i]);
+        printf("%s=\n",arr[i]);
+        }
+    }
+    fclose(fp);
+    return 0;
+}
